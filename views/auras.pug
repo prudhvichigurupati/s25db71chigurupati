@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  p Below are some aura search results:
+
+  -
+    let results = [
+      { color: "Indigo", intensity: 8, emotion_associated: "Clarity" },
+      { color: "Green", intensity: 6, emotion_associated: "Calm" },
+      { color: "Red", intensity: 9, emotion_associated: "Passion" }
+    ];
+
+  .container-fluid
+    .row
+      each aura in results
+        .col-sm-3.mb-4
+          .border.p-3(style="border: 2px solid black;")
+            h3= aura.color
+            p Intensity: #{aura.intensity}
+            p Emotion: #{aura.emotion_associated}
+
+  p
+    a(href="/") Back to Home
