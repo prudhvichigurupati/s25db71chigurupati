@@ -1,5 +1,6 @@
 # this is my assignment 10 
-render link : https://s25wb71chigurupati-2.onrender.com
+render link : https://s25db71chigurupati.onrender.com
+
 
 ## Class: Auras
 - **color** (string) – Dominant color of the aura
